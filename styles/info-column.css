@@ -1,0 +1,14 @@
+#info-column {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  grid-column: 4 / 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 825px) {
+  #info-column {
+    display: none;
+  }
+}

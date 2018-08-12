@@ -1,0 +1,32 @@
+main {
+  grid-column: 3 / 3 ;
+  grid-row: 2 / 2;
+  box-sizing: border-box;
+}
+
+.panel {
+  background: #ffffff;
+  width: 90%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 6px 20px 0 var(--soft-black);
+}
+
+.panel h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+  width: 100%;
+  border-bottom: 1px solid var(--soft-black);
+}
+
+.panel label {
+  margin: 1rem 0;
+  display: inline-block;
+}
+
+@media (max-width: 825px) {
+  main {
+    width: 100%;
+  }
+}

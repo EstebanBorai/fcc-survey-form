@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('styles/header.css');
+@import url('styles/aside.css');
+@import url('styles/main.css');
+@import url('styles/info-column.css');
+
+:root {
+  --black: #121212;
+  --white: #eeeeee;
+  --soft-black: rgba(0, 0, 0, 0.19);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: var(--white);
+  color: var(--black);
+  display: grid;
+  grid-template-rows: 30px auto;
+  grid-template-columns: 5% 20% 50% 20% 5%;
+}
+
+h2, #description {
+  text-align: center;
+}
+
+@media (max-width: 825px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
