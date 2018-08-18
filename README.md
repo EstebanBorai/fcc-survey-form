@@ -33,3 +33,6 @@ You can build your project by forking this CodePen pen. Or you can use this CDN 
 Once you're done, submit the URL to your working project with all its test
 
 Remember to use the Read-Search-Ask method if you get stuck.
+
+### The CodePen Project
+[Visit the CodePen Project!](https://codepen.io/eborai/pen/QVLKjW)
