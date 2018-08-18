@@ -20,17 +20,39 @@
   </aside>
   <main id="main">
     <form id="survey-form">
+      <!-- Personal Info -->
       <div class="panel">
         <h3>Personal Info</h3>
-        <label id="name-label">First Name <input type="text" id="name" name="Name" placeholder="John" required /></label>
-        <label>Middle Name <input type="text" id="middle-name" name="Middle Name" placeholder="Appleseed" /></label>
-        <label>Last Name <input type="text" id="last-name" name="Last Name" placeholder="Doe" /></label>
-        <label id="email-label">Email <input type="email" id="email" required placeholder="johndoe@example.com" /></label>
-        <label id="number-label">Phone Number <input type="number" id="number" max="10000000" min="10000000" required placeholder="1234567" /></label>
+        <label id="name-label" class="alphanumeric-label">
+          <span>First Name</span>
+          <input type="text" id="name" name="Name" placeholder="John" required />
+        </label>
+        <label class="alphanumeric-label">
+          <span>Middle Name</span>
+          <input type="text" id="middle-name" name="Middle Name" placeholder="Appleseed" />
+        </label>
+        <label class="alphanumeric-label">
+          <span>Last Name</span>
+          <input type="text" id="last-name" name="Last Name" placeholder="Doe" />
+        </label>
+        <label id="email-label" class="alphanumeric-label">
+          <span>Email</span>
+          <input type="email" id="email" required placeholder="johndoe@example.com" />
+        </label>
+        <label class="alphanumeric-label">
+          <span>Location</span>
+          <input type="text" id="location" required placeholder="Buenos Aires, Argentina" />
+        </label>
+        <label id="number-label" class="alphanumeric-label">
+          <span>Number</span>
+          <input type="number" id="number" min="100000000000" max="100000000000" required placeholder="123-4567-7890" />
+        </label>
       </div>
+      <!-- Education -->
       <div class="panel">
         <h3>Education</h3>
-        <label>Education Level
+        <label class="alphanumeric-label">
+          <span>Education Level</span>
           <select id="dropdown">
             <option value="no_education_completed">No Education</option>
             <option value="primary">Primary</option>
@@ -40,53 +62,120 @@
           </select>
         </label>
       </div>
+      <!-- Developer Profile -->
       <div class="panel">
         <h3>Developer Profile</h3>
         <h4>Developer Type</h4>
-          <label>Font-End
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Back-End
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Full-Stack
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Mobile Developer
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Game Developer
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <h4>Seniority</h4>
-          <label>Junior
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Semi-Senior
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
-          <label>Senior
-            <input type="radio" id="front-end" name="Front-End" value="front-end" />
-          </label>
+        <label>Font-End
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Back-End
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Full-Stack
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Mobile Developer
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Desktop Applications Developer
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Database Administrator
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Game Developer
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <h4>Seniority</h4>
+        <label>Junior
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Semi-Senior
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <label>Senior
+          <input type="radio" id="front-end" name="Front-End" value="front-end" />
+        </label>
+        <h4>Open Source Contributor</h4>
+        <label>Yes
+          <input type="radio" name="open-source-yes" value="true" />
+        </label>
+        <label>No
+          <input type="radio" name="open-source-no" value="false" />
+        </label>
+        <h4>Developer Experience</h4>
+        <label class="alphanumeric-label">
+          <span>Experience</span>
+          <select>
+            <option>0 to 2 years</option>
+            <option>2 to 4 years</option>
+            <option>4 to 6 years</option>
+            <option>More than 6 years</option>
+          </select>
+        </label>
       </div>
+      <!-- Technology Stack -->
       <div class="panel">
         <h3>Technology Stack</h3>
-        <h4>Front-End Technologies</h4>
+        <p>Which of these technologies do you use in your day to day as a developer? (Choose one or more)</p>
         <label>HTML
-          <input type="checkbox" id="html" name="HTML" value="HTML" />
+          <input type="checkbox" name="HTML" value="HTML" />
         </label>
         <label>CSS
-          <input type="checkbox" id="css" name="CSS" value="CSS" />
+          <input type="checkbox" name="CSS" value="CSS" />
         </label>
         <label>JavaScript
-          <input type="checkbox" id="javaScript" name="JavaScript" value="JavaScript" />
+          <input type="checkbox" name="JavaScript" value="JavaScript" />
+        </label>
+        <label>TypeScript
+          <input type="checkbox" name="typeScript" value="typeScript" />
+        </label>
+        <label>C
+          <input type="checkbox" name="c-lang" value="c-lang" />
+        </label>
+        <label>C++
+          <input type="checkbox" name="cplusplush" value="cplusplush" />
+        </label>
+        <label>C#
+          <input type="checkbox" name="HTML" value="HTML" />
+        </label>
+        <label>Java
+          <input type="checkbox" name="Java" value="Java" />
+        </label>
+        <label>Python
+          <input type="checkbox" name="Python" value="Python" />
+        </label>
+        <label>Ruby
+          <input type="checkbox" name="Ruby" value="Ruby" />
+        </label>
+        <label>Swift
+          <input type="checkbox" name="swift" value="swift" />
+        </label>
+        <label>Assembly
+          <input type="checkbox" name="assembly" value="assembly" />
+        </label>
+        <label>Go
+          <input type="checkbox" name="go-lang" value="go-lang" />
+        </label>
+        <label>Rust
+          <input type="checkbox" name="rust" value="rust" />
+        </label>
+        <label>SQL
+          <input type="checkbox" name="sql" value="sql" />
+        </label>
+        <label>PHP
+          <input type="checkbox" name="php" value="php" />
+        </label>
+        <label>Bash
+          <input type="checkbox" name="bash" value="bash" />
         </label>
       </div>
       <div class="panel">
         <h3>Share with us your opinion about <strong>Coderhub</strong>!</h3>
         <textarea></textarea>
       </div>
-      <div>
+      <div id="form-options">
         <input type="submit" name="submit" id="submit" />
       </div>
     </form>
@@ -97,7 +186,7 @@
       Coderhub Annual Survey, for developers, by developers to developers.
     </p>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 </html>

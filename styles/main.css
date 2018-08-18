@@ -20,11 +20,6 @@ main {
   border-bottom: 1px solid var(--soft-black);
 }
 
-.panel label {
-  margin: 1rem 0;
-  display: inline-block;
-}
-
 @media (max-width: 825px) {
   main {
     width: 100%;
