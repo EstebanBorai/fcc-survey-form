@@ -4,15 +4,12 @@
 @import url('styles/main.css');
 @import url('styles/info-column.css');
 @import url('styles/form.css');
-@import url('styles/top.css');
-@import url('styles/form.css');
 
 :root {
   --black: #121212;
   --white: #eeeeee;
   --primary: #623a88;
   --soft-black: rgba(0, 0, 0, 0.19);
-  --primary: #623a88;
 }
 
 body {
