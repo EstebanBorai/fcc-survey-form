@@ -1,5 +1,5 @@
 <a href="https://www.freecodecamp.org/">
-  <img align="left" width="100" height="100" alt="freeCodeCamp Logo" src="https://raw.githubusercontent.com/gitpullsh/fcc-survey-form/master/assets/freecodecamp_logo.gif" />
+  <img align="left" width="100" height="100" alt="freeCodeCamp Logo" src="https://raw.githubusercontent.com/estebanborai/fcc-survey-form/master/assets/freecodecamp_logo.gif" />
 </a>
 
 # fcc-survey-form
